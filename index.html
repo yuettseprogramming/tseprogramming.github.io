@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8">
+	<title>My portfolio</title>
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/chatBubble.css">
+	<link rel="stylesheet" href="css/cards.css">
+	<!--<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale1, user-scalable=no">-->
+</head>
+
+
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+		<a class="nav-brand text-dark" href="IMG_0177.jpg">Fu</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a href="#" class="nav-link text-dark">Home</a></li>
+				<li class="dropdown nav-item">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLin">
+			        <a class="dropdown-item" href="#">Action</a>
+			        <a class="dropdown-item" href="#">Another action</a>
+			        <a class="dropdown-item" href="#">Something else here</a>
+			        </div>
+                </li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="blockWithImage">
+		<div class="container-fluid" id="topHalf">
+			<div class="row">
+				<div class="col-12">
+					<div class="text-block">
+						<div id="img-block">
+							<img id="matchman0" class=""style="height: ; width: "class="" src="css/img/matchmanOpenMouth.png">
+						</div>
+						<div id="myName">
+							<p>←YUET TSE</p>
+						</div>
+						<div id="introTalkBubble" class="talk-bubble tri-right round  left-top" style="">
+							<div class="talktext" style="">
+								<p id="introduction0" style="; " class=""></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bottomOfFirstPage">
+			<div class="container" id="bottomContainer">
+				<div id="row">
+					<h1 id="portfolioHeader">Portfolio</h1>
+					<p id="portfolioIntroduction">Below you can <b>PLAY</b> a BlackJack game project I've been working on lately and some projects that I have done in school.</p>
+				</div>
+				<div class="col-12" style="margin-top: 10px">
+					<button id="checkOutMyWork" class="btn-primary"><a style="color: white; font-size: 40px;"href="#block2">Check Out my Work</a></button>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="blocks" id="block2" style="background-color:  #00a651;;">
+		<div class="container">
+			<div class="row">
+				<div class="col-12" style="">
+					<div class="img-block2" style="visibility: visible;">
+						<img id="dealer" class="" src="css/img/matchman0.png">
+					</div>
+					<div class="text-block2" id="dealerBubble" style="">
+						<div id="" class="talk-bubble1 tri-right round left-top" style="">
+							<div class="talktext" id = ""style="">
+								<span>
+									<p id="result" style="font-size: 20px; margin-bottom: 10px" class="">Come play with me!</p>
+									<button id="game" style="" onclick="letTheGameBegin.reset(); letTheGameBegin.gameStart();">Let the game Begin</button>
+								</span>
+							</div>
+						</div>		
+					</div>
+				</div>
+				<div class="col-12">
+					<span id="cards"></span>
+					<span id=""></span>
+					<span id="totalCard">Total cards in deck: 52</span>
+				</div>
+				<div class="col-12 text-center" style="">
+					<button id="hit" onclick="letTheGameBegin.hit();">Hit</button>
+					<button class="" id="stay" onclick="letTheGameBegin.stay();">Stay</button>
+					<button id="nextRound" onclick="letTheGameBegin.nextRound();">Next Round</button>
+				</div>
+				<div id="dealerTable" class="col-12 text-center" style="margin-top:200px; padding-bottom: 200px">
+					<span>Dealer</span>
+					<span id="dealerCards"></span>
+					<span id="dealerPoints"></span>
+				</div>
+				<div id="playerTable" class="col-12 text-center" style=" padding-bottom: 200px">
+					<span>Player</span>
+					<span id="playerCards" class="text-center">
+						<div id="playerHand" class="" style="position:absolute"> 
+						</div>
+					</span>
+					<span id="playerPoints"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/blackJack.js"></script>
+	<script src=js/chatBubble.js></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
